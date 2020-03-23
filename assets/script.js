@@ -28,27 +28,28 @@ function buildQueryUrl() {
     }).then(function(response) {
           console.log(response);
     });
+
+
 };
 
 buildQueryUrl();
 
+function updatePage(NYTdata) {
+
+    
+    for (var i = 0; i < articles; i++) {
+    
+    var article = NYTdata.response.docs[i];
+    var headline = article.headline.main;
+    var byLine = article.byline.original;
+    var webURL = article.web_url;
+    var pubDate = article.pub_date;
+    }
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-    // var queryURL = "https://cors-anywhere.herokuapp.com/https://api.nytimes.com/svc/search/v2/articlesearch.json?q=coronavirus&api-key=tRkWuiJbzNglNxZ4AHhGjmuVkPBAF7QR";
-
-   
 
 
 
