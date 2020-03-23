@@ -29,9 +29,9 @@ for (var i = 0; i < countries.length; i++) {
         }) 
     };     
 
-    function displayData() {
-        $("#submit").on("click", )
-    }
+    // function displayData() {
+    //     $("#submit").on("click", )
+    // }
 
 // 1. country typed click of submit button
 // 2. jquery grabbing search input and using .text to place it in display div
