@@ -14,15 +14,51 @@
 // });
 
 console.log("loaded");
+// global array of countries
+var countries = ["Uganda", "Colombia", "Italy"];
 
-//ajax call for virus tracker api
+for (var i = 0; i < countries.length; i++) {
+    var country = countries[i];
+    var queryURL = "https://corona.lmao.ninja/countries/" + country;
+        $.ajax({
+            url: queryURL,
+            dataType: 'json',
+            success: function(data) {
+                console.log(data);
+            }
+        }) 
+    };     
+
+    function displayData() {
+        $("#submit").on("click", )
+    }
+
+// 1. country typed click of submit button
+// 2. jquery grabbing search input and using .text to place it in display div
+// 3. deaths, cases is pulled from country that is chosen
+// 4. 
+
+
+// $("#searchForm").text
+
+
+
+
+
+// ajax call for virus tracker api
+// for loop to go through array l.17   
+
     // function buildQueryUrl() {
-       
+    //    var queryURL = "https://corona.lmao.ninja/countries"
     //     $.ajax({
-    //         url: 'https://thevirustracker.com/free-api?global=stats',
+    //         url: queryURL,
     //         dataType: 'json',
     //         success: function(data) {
     //           console.log(data);
+    //           for (var i = 0; i < data.length; i++) {
+                  
+    //           }
+    //           console.log(data[195]);
     //         }
     //       });
     // }
