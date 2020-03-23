@@ -15,37 +15,50 @@
 
 console.log("loaded");
 
+//ajax call for virus tracker api
+    // function buildQueryUrl() {
+       
+    //     $.ajax({
+    //         url: 'https://thevirustracker.com/free-api?global=stats',
+    //         dataType: 'json',
+    //         success: function(data) {
+    //           console.log(data);
+    //         }
+    //       });
+    // }
+
+    // buildQueryUrl();
+
 
 // // ajax call for ny times api
 
-
-function buildQueryUrl() {
-    var queryURL = "https://cors-anywhere.herokuapp.com/https://api.nytimes.com/svc/search/v2/articlesearch.json?q=coronavirus&api-key=tRkWuiJbzNglNxZ4AHhGjmuVkPBAF7QR";
+// function buildQueryUrl() {
+//     var queryURL = "https://cors-anywhere.herokuapp.com/https://api.nytimes.com/svc/search/v2/articlesearch.json?q=coronavirus&api-key=tRkWuiJbzNglNxZ4AHhGjmuVkPBAF7QR";
     
-    $.ajax({
-        url: queryURL,
-        method: "GET"
-    }).then(function(response) {
-          console.log(response);
-    });
+//     $.ajax({
+//         url: queryURL,
+//         method: "GET"
+//     }).then(function(response) {
+//           console.log(response);
+//     });
 
 
-};
+// };
 
-buildQueryUrl();
+// buildQueryUrl();
 
-function updatePage(NYTdata) {
+// function updatePage(NYTdata) {
 
     
-    for (var i = 0; i < articles; i++) {
+//     for (var i = 0; i < articles; i++) {
     
-    var article = NYTdata.response.docs[i];
-    var headline = article.headline.main;
-    var byLine = article.byline.original;
-    var webURL = article.web_url;
-    var pubDate = article.pub_date;
-    }
-}
+//     var article = NYTdata.response.docs[i];
+//     var headline = article.headline.main;
+//     var byLine = article.byline.original;
+//     var webURL = article.web_url;
+//     var pubDate = article.pub_date;
+//     }
+// }
 
 
 
@@ -54,3 +67,10 @@ function updatePage(NYTdata) {
 
 
 // https://api.nytimes.com/svc/search/v2/articlesearch.json?q=coronvirus&api-key=tRkWuiJbzNglNxZ4AHhGjmuVkPBAF7QR
+
+
+
+// apiurl1: https://corona.lmao.ninja/countries
+    // data.updated ; data.cases ; data.deaths ; data.recovered ; data country
+                // data.updated => new date(data.updated)
+    // worldometer source
