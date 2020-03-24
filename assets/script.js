@@ -14,8 +14,10 @@
 // });
 
 console.log("loaded");
+
+
 // global array of countries
-var countries = ["Uganda", "Colombia", "Italy"];
+var countries = ["United States", "Canada", "Mexico",];
 
 for (var i = 0; i < countries.length; i++) {
     var country = countries[i];
