@@ -65,3 +65,36 @@ for (var i = 0; i < countries.length; i++) {
 //     }
 // }
 
+console.log("loaded");
+
+
+// // ajax call for ny times api
+
+
+function buildQueryUrl() {
+    // var queryURL = "https://cors-anywhere.herokuapp.com/https://api.nytimes.com/svc/search/v2/articlesearch.json?q=coronavirus&api-key=tRkWuiJbzNglNxZ4AHhGjmuVkPBAF7QR";
+    var queryURL="https://api.nytimes.com/svc/search/v2/articlesearch.json?q=coronavirus&api-key=Vio4br6H4gJ30hMPlAgpDhJ0rtGrJa76";
+    return queryURL;
+};
+function updatePage(nytData) {
+    
+    
+  
+   
+     
+     
+    console.log(nytData.response.docs[0].abstract);
+      
+     
+    }
+
+    window.onload = function() {
+        event.preventDefault();
+        var queryURL = buildQueryUrl();
+        $.ajax({
+          url: queryURL,
+          method: "GET"
+        }).then(updatePage) 
+      };
+      
+
