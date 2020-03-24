@@ -1,0 +1,21 @@
+body {
+    background-image: url(../assets/images/virus.png);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+h2 {
+    font-family:  'Marcellus', serif;
+    color: blue;
+    text-align: center;
+    font-size: 50px;
+}
+
+p {
+    font-family:  'Marcellus', serif;
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: rgba(245, 245, 220, 0);
+}
