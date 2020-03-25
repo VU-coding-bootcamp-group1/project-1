@@ -76,14 +76,12 @@
 						<div class="form-group">
 							 
 							<label for="searchform">
-								Search
+								Search Country
 							</label>
-							<input type="search" class="form-control" id="searchform" />
+							<input type="search" class="form-control" id="search-form" />
 						</div>
 						
-						<button type="submit" class="btn btn-primary" id="submit">
-							Submit
-						</button>
+						<input type="submit" class="btn btn-primary" id="submit"></input>
 					</form>
 				</div>
 			</div>
@@ -92,12 +90,12 @@
 					<table class="table table-hover table-dark">
 						<thead>
 						  <tr>
-							<th scope="col">Country</th>
-							<th scope="col">Total Cases</th>
-							<th scope="col">New Cases</th>
-							<th scope="col">Total Deaths</th>
-							<th scope="col">New Deaths</th>
-							<th scope="col">Total Recovered</th>
+							<th scope="col" id="country">Country</th>
+							<th scope="col" id="totalCases">Total Cases</th>
+							<th scope="col" id="newCases">New Cases</th>
+							<th scope="col" id="totalDeaths">Total Deaths</th>
+							<th scope="col" id="newDeaths">New Deaths</th>
+							<th scope="col" id="recovered">Total Recovered</th>
 						  </tr>
 						</thead>
 						<tbody id="stats">

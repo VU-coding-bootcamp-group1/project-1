@@ -15,50 +15,31 @@
 
 console.log("loaded");
 
-// global array of countries
-var countries = ["United States", "Canada", "Mexico"];
 
-for (var i = 0; i < countries.length; i++) {
-  var country = countries[i];
-  var queryURL = "https://corona.lmao.ninja/countries/" + country;
-  $.ajax({
-    url: queryURL,
-    dataType: "json",
-    success: function(data) {
-      console.log(data);
-    }
-  });
-}
+$("#submit").on("click", function(event) {
 
-// // ajax call for ny times api
+    event.preventDefault();
 
-// function buildQueryUrl() {
-//     var queryURL = "https://cors-anywhere.herokuapp.com/https://api.nytimes.com/svc/search/v2/articlesearch.json?q=coronavirus&api-key=tRkWuiJbzNglNxZ4AHhGjmuVkPBAF7QR";
+    var country = $("#search-form").val(); // country searched
 
-//     $.ajax({
-//         url: queryURL,
-//         method: "GET"
-//     }).then(function(response) {
-//           console.log(response);
-//     });
+    var queryURL = "https://corona.lmao.ninja/countries/" + country;
 
-// };
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function(response) {
+        console.log(response);
+    });
+});
 
-// buildQueryUrl();
+    
+    
+  
 
-// function updatePage(NYTdata) {
 
-//     for (var i = 0; i < articles; i++) {
 
-//     var article = NYTdata.response.docs[i];
-//     var headline = article.headline.main;
-//     var byLine = article.byline.original;
-//     var webURL = article.web_url;
-//     var pubDate = article.pub_date;
-//     }
-// }
 
-console.log("loaded");
+     
 
 // // ajax call for ny times api
 
@@ -93,3 +74,11 @@ window.onload = function() {
     method: "GET"
   }).then(updatePage);
 };
+
+
+// nyt times documentation
+    //  article = NYTdata.response.docs[i];
+    //  headline = article.headline.main;
+    //  byLine = article.byline.original;
+    //  webURL = article.web_url;
+    //  pubDate = article.pub_date;
