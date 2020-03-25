@@ -15,6 +15,7 @@
 
 console.log("loaded");
 
+// var countries = []; we could add countries into an array that displays on the screen. When the user clicks that button?, it could generate a map
 
 $("#submit").on("click", function(event) {
 
@@ -29,7 +30,18 @@ $("#submit").on("click", function(event) {
         method: "GET"
     }).then(function(response) {
         console.log(response);
+
+    
+        $("#country").append(`<p> ${response.country}</p>`)
+        $("#totalCases").append(`<p> ${response.cases}</p>`)
+        $("#newCases").append(`<p> ${response.todayCases}</p>`)
+        $("#totalDeaths").append(`<p> ${response.deaths}</p>`)
+        $("#newDeaths").append(`<p> ${response.todayDeaths}</p>`)
+        $("#recovered").append(`<p> ${response.recovered}</p>`)
+
     });
+
+    
 });
 
     
