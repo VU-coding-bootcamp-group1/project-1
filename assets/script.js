@@ -22,7 +22,7 @@ $("#submit").on("click", function(event) {
     event.preventDefault();
 
     var country = $("#search-form").val(); // country searched
-
+    
     var queryURL = "https://corona.lmao.ninja/countries/" + country;
 
     $.ajax({
@@ -30,7 +30,10 @@ $("#submit").on("click", function(event) {
         method: "GET"
     }).then(function(response) {
         console.log(response);
-
+        if (response.country === undefined){
+          alert("input a country");
+          return;
+        }
     
         $("#country").append(`<p> ${response.country}</p>`)
         $("#totalCases").append(`<p> ${response.cases}</p>`)
