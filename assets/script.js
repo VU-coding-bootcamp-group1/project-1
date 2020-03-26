@@ -70,9 +70,9 @@ function updatePage(nytData) {
      var article = nytData.response.docs[i];
     var headline = article.headline.main;
     var byLine = article.byline.original;
-    // var webURL = article.web_url;
+    var webURL = article.web_url;
      var pubDate = article.pub_date;
-    var newArticle = $(`<tr><th>${i+1}</th><th>${headline}</th><th>${byLine}</th><th>${pubDate}</th></tr>`);
+    var newArticle = $(`<tr><th>${i+1}</th><th><a href="${webURL}">${headline}</a></th><th>${byLine}</th><th>${pubDate}</th></tr>`);
     $("#article").append(newArticle);
 
   }
