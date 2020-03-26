@@ -14,9 +14,31 @@ h2 {
 p {
     font-family:  'Marcellus', serif;
     text-align: center;
+    padding-top: 8px;
 }
 
 .jumbotron {
     background-color: rgba(245, 245, 220, 0);
+}
+
+#submit {
+    background-color: dodgerblue;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-bottom: 15px; 
+    padding-bottom: 5px;
+}
+
+.table th {
+    padding-left: 10px;
+    padding-top: 5px;
+
+}
+
+.statHeader {
+    font-size: 15px;
+    font-family: 'Marcellus', serif;
+    font-weight: bold;
 }
 
