@@ -17,8 +17,8 @@ Because people all across the world are worried about the coronavirus, our team 
 
 ## What We Used:
 1. APIs:
-    a. New York Times 
-    b. https://corona.lmao.ninja/countries (COVID-19 by country)
+    - New York Times 
+    - https://corona.lmao.ninja/countries (COVID-19 by country)
 2. HTML/CSS
 3. JavaScript
 4. jQuery
@@ -28,7 +28,7 @@ Because people all across the world are worried about the coronavirus, our team 
 
 
 ## Team Members:
-1. Zachary Sievers
+1. Zach Sievers
 2. Vance Newberry
 3. Darrick Fisher
 4. Amy Haerr
