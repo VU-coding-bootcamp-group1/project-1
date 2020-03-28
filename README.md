@@ -19,6 +19,7 @@ Because people all across the world are worried about the coronavirus, our team 
 1. APIs:
     - New York Times 
     - https://corona.lmao.ninja/countries (COVID-19 by country)
+    - GEO JSON API
 2. HTML
 3. CSS
 4. Bootstrap
@@ -26,6 +27,7 @@ Because people all across the world are worried about the coronavirus, our team 
 6. jQuery
 7. AJAX
 8. CDNs
+9. Firebase
 
 
 
