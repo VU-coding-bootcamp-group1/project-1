@@ -47,7 +47,28 @@ $("#submit").on("click", function(event) {
     
 });
 
+    function searchFromMap(countrySelected){
+      var queryURL = "https://corona.lmao.ninja/countries/" + countrySelected;
+
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function(response) {
+        console.log(response);
+        if (response.country === undefined){
+          alert("input a country");
+          return;
+        }
     
+        $("#country").append(`<p> ${response.country}</p>`)
+        $("#totalCases").append(`<p> ${response.cases}</p>`)
+        $("#newCases").append(`<p> ${response.todayCases}</p>`)
+        $("#totalDeaths").append(`<p> ${response.deaths}</p>`)
+        $("#newDeaths").append(`<p> ${response.todayDeaths}</p>`)
+        $("#recovered").append(`<p> ${response.recovered}</p>`)
+
+    });
+    }
     
   
 
@@ -99,3 +120,47 @@ window.onload = function() {
     //  byLine = article.byline.original;
     //  webURL = article.web_url;
     //  pubDate = article.pub_date;
+   
+    map.on('load', function () {
+      // Add a GeoJSON source containing the state polygons.
+      map.addSource('states', {
+          'type': 'geojson',
+          'data': 'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_admin_0_countries.geojson'
+      });
+  
+      // Add a layer showing the state polygons.
+      map.addLayer({
+          'id': 'states-layer',
+          'type': 'fill',
+          'source': 'states',
+          'paint': {
+              'fill-color': 'rgba(200, 100, 240, 0.4)',
+              'fill-outline-color': 'rgba(200, 100, 240, 1)'
+          }
+      });
+  });
+  
+  
+  // When a click event occurs near a polygon, open a popup at the location of
+  // the feature, with description HTML from its properties.
+  map.on('click', function (e) {
+      var features = map.queryRenderedFeatures(e.point, { layers: ['states-layer'] });
+      if (!features.length) {
+          return;
+      }
+  
+      var feature = features[0];
+      searchFromMap(feature.properties.name);
+      var popup = new mapboxgl.Popup()
+          .setLngLat(map.unproject(e.point))
+          .setHTML(`<h3>${feature.properties.name}</h3>`)
+          .addTo(map);
+
+  });
+  
+  // Use the same approach as above to indicate that the symbols are clickable
+  // by changing the cursor style to 'pointer'.
+  map.on('mousemove', function (e) {
+      var features = map.queryRenderedFeatures(e.point, { layers: ['states-layer'] });
+      map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+  });
