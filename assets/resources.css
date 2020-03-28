@@ -34,6 +34,15 @@ body {
     font-size: 27px;
 }
 
+/* Footer */
+.footer {
+    background: black;
+    color: white;
+}
+.card-header {
+    text-align: center;
+    font-size: 25px;
+}
 
 
 /* slides */
