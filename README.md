@@ -19,11 +19,13 @@ Because people all across the world are worried about the coronavirus, our team 
 1. APIs:
     - New York Times 
     - https://corona.lmao.ninja/countries (COVID-19 by country)
-2. HTML/CSS
-3. JavaScript
-4. jQuery
-5. AJAX
-6. CDNs
+2. HTML
+3. CSS
+4. Bootstrap
+5. JavaScript
+6. jQuery
+7. AJAX
+8. CDNs
 
 
 
