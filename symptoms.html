@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <title>Covid 19</title>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h2 class="animated heartBeat delay-2s">
+                        World Health Crisis: COVID-19
+                    </h2>
+                    <p>
+                        The disease has been named “coronavirus disease 2019” (abbreviated “COVID-19”). The Center for
+                        Disease Control (CDC) has labeled this virus as a pandemic class. It is spread through droplets
+                        from an infectious person coughing or sneezing or through saliva or discharge through the nose.
+                    </p>
+
+                  
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="resources.html" id="resources">Resources</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Profile</a>
+                            </li>
+
+                            <li class="nav-item dropdown ml-md-auto">
+                                <a class="nav-link dropdown-toggle" href="http://example.com"
+                                    id="navbarDropdownMenuLink" data-toggle="dropdown">Additional Information</a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="https://www.cdc.gov/coronavirus/2019-nCoV/index.html"
+                                        target="_blank">C.D.C.</a> <a class="dropdown-item"
+                                        href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+                                        target="_blank">W.H.O.</a> <a class="dropdown-item"
+                                        href="https://www.fda.gov/emergency-preparedness-and-response/mcm-issues/coronavirus-disease-2019-covid-19"
+                                        target="_blank">F.D.A.</a>
+                                    <div class="dropdown-divider">
+                                    </div> <a class="dropdown-item"
+                                        href="https://www.un.org/en/coronavirus/information-un-headquarters-new-york"
+                                        target="_blank">United Nations</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container bg-faded">
+                    <h1 class="text-center">Coronavirus Symptoms</h1>
+                    <div class="row">
+                        <div class="col text-center">People all over the world are suffering from the coronavirus. If you have been tested for the coronavirus or feel like you may have the virus, please fill out the form listed below.</div>
+                    </div>
+                    </div>
+
+                    <div class="row align-items-center my-5">
+                        <div class="col-lg-7">
+                          <img class="img-fluid rounded mb-4 mb-lg-0" src="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F200108214800-coronavirus.jpg" alt="">
+                        </div>
+                        <div class="col-lg-5">
+                          <div class="container">
+                            <form id="contactForm">
+                              <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Add Name" id="name">
+                              </div>
+                      
+                              <div class="form-group">
+                                <label>Message</label>
+                                <textarea class="form-control" placeholder="Add Message" id="message"></textarea>
+                              </div>
+
+                              <div class="form-group">
+                                <label>Age</label>
+                                <textarea class="form-control" placeholder="Add age" id="age"></textarea>
+                              </div>
+
+                              <div class="form-group">
+                                <label>Test Results</label>
+                                <select class="form-control" id="testResults">
+                                    <option value="positive">Positive</option>
+                                    <option value="negative">Negative</option>
+                                    <option value="untested">Untested</option>
+                                </select>
+                              </div>
+                      
+                              <div class="form-group">
+                                <label>Gender</label>
+                                <select class="form-control" id="gender">
+                                  <option value="male">Male</option>
+                                  <option value="female">Female</option>
+                                  <option value="other">Other</option>
+                                </select>
+                              </div>
+                            </div>
+                          <button class="btn btn-primary" href="#" id="button">Submit</button>
+                        </form>
+                        </div>
+                      </div>
+                      <div class="card text-white bg-secondary my-5 py-4 text-center">
+                        <div class="card-body">
+                          <p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p>
+                        </div>
+                      </div>
+
+
+                <div class="card-deck">
+                    <div class="card">
+                      <img class="card-img-top" src="https://www.cdc.gov/coronavirus/2019-ncov/images/symptoms-fever.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Fever</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="https://www.cdc.gov/coronavirus/2019-ncov/images/symptoms-cough.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Cough</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="https://www.cdc.gov/coronavirus/2019-ncov/images/symptoms-shortnessOfBreath.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Shortness of Breath</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card text-white bg-secondary my-5 py-4 text-center">
+                    <div class="card-body">
+                      <p class="text-white m-0"> *Having these symptoms does not garauntee that you have been infected with the virus. Additionally, you may be infected with the virus and show no symptoms. </p>
+                    </div>
+                  </div>
+                  <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase.js"></script>
+                 <script src="firebase.js"></script>
+</html>
