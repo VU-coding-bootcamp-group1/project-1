@@ -14,9 +14,13 @@ body {
 }
 
 #Name {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     margin: auto;
+    padding-left: 190px;
+
 }
+
 
 .rounded-circle {
     width: 30px;
@@ -30,17 +34,42 @@ body {
     font-size: 17px;
 }
 
+.card-deck {
+    margin: auto;
+}
+
 .card-text {
     font-size: 27px;
+    text-align: center;
 }
+
+h4 {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.btn {
+    padding-top: 2px;
+    width: 70px;
+    height: 30px;
+}
+
+a {
+    color: dodgerblue;
+}
+
 
 /* Footer */
 .footer {
-    background: black;
-    color: white;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    border: 1px solid thin;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: -25px;
 }
 .card-header {
-    text-align: center;
     font-size: 25px;
 }
 
