@@ -1,4 +1,4 @@
-console.log("loading..")
+
    // Initialize Firebase
    var config = {
     apiKey: "AIzaSyDnDiS9AA503gtq22txINtzdlnVYGsDQhw",
