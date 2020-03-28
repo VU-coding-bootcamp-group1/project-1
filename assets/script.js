@@ -75,8 +75,9 @@ function updatePage(nytData) {
     var byLine = article.byline.original;
     var webURL = article.web_url;
      var pubDate = article.pub_date;
-     var lead = article.lead_paragraph;
-    var newArticle = $(`<tr><th>${i+1}</th><th><a href="${webURL}">${headline}</a><br><p>${lead}</p></th><th>${byLine}</th><th>${pubDate}</th></tr>`);
+     if(pubDate.length > 10) {pubDate = pubDate.substring(0,10)};
+     var lead = article.lead_paragraph
+    var newArticle = $(`<tr><th>${i+1}</th><th><a target="_blank" href="${webURL}">${headline}</a><br><p>${lead}</p></th><th>${byLine}</th><th>${pubDate}</th></tr>`);
     $("#article").append(newArticle);
 
   }
