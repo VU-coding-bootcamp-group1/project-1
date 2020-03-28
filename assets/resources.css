@@ -21,7 +21,6 @@ body {
 
 }
 
-
 .rounded-circle {
     width: 30px;
 }
@@ -34,6 +33,7 @@ body {
     font-size: 17px;
 }
 
+/* Card styling */
 .card-deck {
     margin: auto;
 }
@@ -43,15 +43,13 @@ body {
     text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 h4 {
     display: inline-block;
     padding-right: 15px;
-}
-
-.btn {
-    padding-top: 2px;
-    width: 70px;
-    height: 30px;
 }
 
 a {
@@ -70,7 +68,6 @@ a {
     margin-bottom: -25px;
 }
 .card-header {
-
     font-size: 25px;
 }
 
