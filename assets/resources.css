@@ -21,6 +21,10 @@ body {
 
 }
 
+li {
+  font-size: 20px;
+}
+
 .rounded-circle {
     width: 30px;
 }
