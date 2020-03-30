@@ -12,7 +12,7 @@ $("#submit").on("click", function(event) {
     }).then(function(response) {
         console.log(response);
         if (response.country === undefined){
-          alert("input a country");
+          $('#myModal').modal();
           return;
         }
     
