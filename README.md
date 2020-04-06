@@ -27,6 +27,17 @@ Because people all across the world are worried about the coronavirus, our team 
 8. CDNs
 9. Firebase
 
+## Technical Aspects:
+
+1. Description of Problem:
+    - To make a working web application housing various information on COVID-19
+2. How it was solved:
+    - After countless hours of research, reviews of previous activities, study groups, tutor support, and TA support, we arrived at a working web application dealing with the pandemic of COVID-19.
+3. Our approach:
+   - We divided up front-end and back-end work.
+   - We used user stories to stay on track for what we wanted accomplished.
+   - We helped each other when one of us would hit a snag in our code or needed additional assistance completing it.
+
 ## Team Members:
 
 1. Zach Sievers
