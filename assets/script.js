@@ -4,7 +4,7 @@ $("#submit").on("click", function(event) {
 
     var country = $("#search-form").val(); // country searched
     
-    var queryURL = "https://corona.lmao.ninja/countries/" + country;
+    var queryURL = "https://corona.lmao.ninja/v2/countries/" + country;
 
     $.ajax({
         url: queryURL,
@@ -29,7 +29,7 @@ $("#submit").on("click", function(event) {
 });
 
     function searchFromMap(countrySelected){
-      var queryURL = "https://corona.lmao.ninja/countries/" + countrySelected;
+      var queryURL = "https://corona.lmao.ninja/v2/countries/" + countrySelected;
 
     $.ajax({
         url: queryURL,
